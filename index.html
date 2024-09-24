@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('LIM.jpg');            
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;          
+            color: #000;            
+        }
+        table {
+            width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #000;
+            background-color: rgba(245, 245, 245, 0.8); 
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        th {
+            background-color: #ddd;
+            text-align: left;
+        }
+        .title {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        .header {
+            background-color: #ddd;
+            text-align: left;
+        }
+        .subtotal, .tax, .grand-total {
+            text-align: right;
+        }
+        .amount {
+            text-align: right;
+        }
+        .no-border {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="4" class="title">Construction Depot Manila</th>
+        </tr>
+        <tr>
+            <td colspan="2" class="header">Invoice #123456789</td>
+            <td colspan="2" class="header" style="text-align: right;">September 22, 2022</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="vertical-align: top;">
+                <strong>Pay to:</strong><br>
+                Construction Depot<br>
+                123 Main St.<br>
+                New York, Cubao, QC
+            </td>
+            <td colspan="2" style="vertical-align: top;">
+                <strong>Customer:</strong><br>
+                John Acosta<br>
+                321 Willowville<br>
+                Mexico, Pampanga
+            </td>
+        </tr>
+        <tr>
+            <th>Name / Description</th>
+            <th>Qty.</th>
+            <th>Unit Cost</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Paperclips</td>
+            <td>1000</td>
+            <td>$0.01</td>
+            <td class="amount">$10.00</td>
+        </tr>
+        <tr>
+            <td>Staples (box)</td>
+            <td>100</td>
+            <td>$1.00</td>
+            <td class="amount">$100.00</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="subtotal">Subtotal</td>
+            <td class="amount">$110.00</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="tax">Tax (8%)</td>
+            <td class="amount">$8.80</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="grand-total"><strong>Grand Total</strong></td>
+            <td class="amount"><strong>$118.80</strong></td>
+        </tr>
+    </table>
+
+</body>
+</html>
